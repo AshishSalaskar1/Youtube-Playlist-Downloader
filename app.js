@@ -8,7 +8,7 @@ const path = require('path');
 
 let url = 'https://www.youtube.com/playlist?list=PL7416bv7eAxw4UgYX_8ifKMp9KRM4IWaN';
 
-let key = 'AIzaSyAm-PDWgEFDy5c-LoMk5ubQSBR1FbzVT-8';
+let key = 'ur api key';
 
 //express Init
 // var app = express();
