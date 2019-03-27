@@ -97,6 +97,7 @@ let playlistToVids = async (URL) => {
 app.post('/url',(req,res) => {
   // let VidUrl = res.params.url;
   let VidUrl = _.pick(req.body,['url']).url;
+  console.log('VidUrl:', VidUrl)
 
   playlistToVids(VidUrl)
     .then((data) => res.send(data))

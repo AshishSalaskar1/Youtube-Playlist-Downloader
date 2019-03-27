@@ -1,0 +1,109 @@
+.myrows{
+  border: 3px solid green;
+  padding: 5px;
+}
+.mycols{
+  border: 3px solid red;
+}
+
+
+.mycontainer{
+  background-color: aqua;
+}
+#topHeader{
+  border-bottom: 1px solid #ebebeb;
+}
+#topHeader a{
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.89rem;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
+nav ul li a {
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+#logo{
+    height: 45px;
+    padding: 0;
+    width: 120px;
+}
+
+#fullFooter{
+  background-color: #082b50;
+  /* position: absolute;
+  bottom: 0; */
+  
+}
+
+#topFooter{
+  
+  color: white; 
+}
+
+#topFooter a{
+  color: silver;
+}
+
+#btmFoot {
+  background-color: #061e36;
+  color: silver;
+}
+
+/* Home page main code */
+#heroImg {
+  width: 350x;
+  height: 250px;
+}
+
+#topHero {
+  background-color: rgb(7, 154, 223);
+  color: rgb(236, 235, 235);
+}
+
+#topHero a{
+  color:white;
+  font-weight: 600;
+}
+
+#heroBtn{
+  background-color: rgb(0, 64, 138);
+  color: white;
+}
+
+.qualityImg {
+  width: 200px;
+  height: 200px;
+}
+
+#getStarted{
+  background-color: #082b50;
+  color: white;
+}
+
+#newsLetter{
+  background-color: #082b50;
+  color: white;
+}
+
+#newsLetter .form-control{
+    border: transparent;
+    border-radius: 20px 0 0 20px;
+}
+
+#newsLetter .btn {
+  border-radius: 0 20px 20px 0;
+}
+
+/* Portfolio Page */
+.breadCrumb {
+  background-color: #e9ecef;
+}
+
+.portHero {
+  background-color: #06305a;
+}
