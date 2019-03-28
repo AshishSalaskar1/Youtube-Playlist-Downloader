@@ -63,12 +63,14 @@ let getVideos1 = async (finalPlayUrl) => {
   let lst = [];
   let playVidArr
   const res = await fetch(finalPlayUrl);
+  console.log('finalPlayUrl:', finalPlayUrl)
   const out = await res.json();
 
           console.log("No of Videos",out.items.length);
           playVidArr = out.items;
           lst = playVidArr.map((ele) => {
               return {name : ele.snippet.title,
+                      image : ele.snippet.thumbnails.default.url,
                       url : urlMaker(ele.snippet.resourceId.videoId)}
           });
 
