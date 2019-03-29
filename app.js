@@ -135,6 +135,15 @@ function onConvertVideoProgress(percent, timemark, targetSize) {
 }
 }
 
+//PLaylist to all vids API route
+app.post('/save',(req,res) => {
+  // let VidUrl = res.params.url;
+  let VidUrl = _.pick(req.body,['url','name']);
+  console.log('VidUrl:', VidUrl);
+  // downloadVideo(VidUrl.url,VidUrl.name);
+});
+
+
 console.log("HIIII");
 
 app.listen(port,() => {
