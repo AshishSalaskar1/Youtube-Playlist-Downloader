@@ -1,6 +1,11 @@
 console.log("HEREEEEE");
 
-let setHtmlVids = (name,imageUrl) => {
+let saveVid = (url) => {
+    console.log(url);
+};
+
+let setHtmlVids = (name,imageUrl,url) => {
+    // console.log(url);
   let newItem = document.createElement('div');
   let content = `<div class="song-item container ">
   <div class="row p-3 align-items-center">
@@ -11,7 +16,7 @@ let setHtmlVids = (name,imageUrl) => {
           <p>${name}</p>
       </div>
       <div class="col-2">
-          <button class="btn-success">Save</button>
+          <button class="btn-success" onclick=saveVid("${url}")>Save</button>
       </div>
   </div>
 </div>`
@@ -31,7 +36,7 @@ let getVids = (url) => {
         console.log(data);
         //change HTML
         data.forEach(element => {
-            setHtmlVids(element.name,element.image);
+            setHtmlVids(element.name,element.image,element.url);
         });
     });
 }
